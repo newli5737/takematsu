@@ -2,15 +2,15 @@ import { Hero } from '../components/Hero';
 import { Card } from '../components/Card';
 import { ProjectCard } from '../components/ProjectCard';
 import { NewsCard } from '../components/NewsCard';
-import { 
-  Factory, 
-  Shield, 
-  Users, 
-  Wrench, 
-  Scissors, 
-  Zap, 
-  Package, 
-  ArrowRight 
+import {
+  Factory,
+  Shield,
+  Users,
+  Wrench,
+  Scissors,
+  Zap,
+  Package,
+  ArrowRight
 } from 'lucide-react';
 
 interface HomeProps {
@@ -138,7 +138,7 @@ export function Home({ onNavigate }: HomeProps) {
           <div className="text-center mb-12">
             <h2 className="text-primary mb-4">会社紹介</h2>
             <p className="text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              鋼構造製作株式会社は、建築鉄骨の専門メーカーとして長年培ってきた技術と経験を活かし、
+              Takematsuは、建築鉄骨の専門メーカーとして長年培ってきた技術と経験を活かし、
               高品質な鉄骨製品を提供しています。設計から製造、施工まで一貫したサービスで
               お客様のニーズにお応えします。
             </p>

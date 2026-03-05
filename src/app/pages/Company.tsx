@@ -8,7 +8,7 @@ interface CompanyProps {
 
 export function Company({ onNavigate }: CompanyProps) {
   const profileData = [
-    { label: '社名', value: '鋼構造製作株式会社' },
+    { label: '社名', value: 'Takematsu' },
     { label: '代表取締役', value: '山田 太郎' },
     { label: '設立', value: '1985年4月1日' },
     { label: '資本金', value: '5億円' },
@@ -20,7 +20,7 @@ export function Company({ onNavigate }: CompanyProps) {
   ];
 
   const history = [
-    { year: '1985', event: '東京都千代田区に鋼構造製作株式会社を設立' },
+    { year: '1985', event: '東京都千代田区にTakematsuを設立' },
     { year: '1990', event: '千葉県柏市に第一工場を開設' },
     { year: '1998', event: 'ISO9001認証取得' },
     { year: '2005', event: '資本金を5億円に増資' },
@@ -50,7 +50,7 @@ export function Company({ onNavigate }: CompanyProps) {
             <Card>
               <div className="p-8">
                 <p className="text-lg leading-relaxed text-gray-700 mb-6">
-                  鋼構造製作株式会社は、1985年の創業以来、建築鉄骨の専門メーカーとして
+                  Takematsuは、1985年の創業以来、建築鉄骨の専門メーカーとして
                   日本のものづくりを支えてきました。
                 </p>
                 <p className="text-lg leading-relaxed text-gray-700 mb-6">
@@ -93,7 +93,7 @@ export function Company({ onNavigate }: CompanyProps) {
                 </div>
                 <div className="lg:col-span-2 p-8">
                   <p className="text-gray-700 leading-relaxed mb-4">
-                    この度は、鋼構造製作株式会社のウェブサイトをご覧いただき、
+                    この度は、Takematsuのウェブサイトをご覧いただき、
                     誠にありがとうございます。
                   </p>
                   <p className="text-gray-700 leading-relaxed mb-4">
@@ -161,7 +161,7 @@ export function Company({ onNavigate }: CompanyProps) {
             <div className="relative">
               {/* Timeline line */}
               <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-accent" />
-              
+
               <div className="space-y-8">
                 {history.map((item, index) => (
                   <div key={index} className="relative flex gap-6">
