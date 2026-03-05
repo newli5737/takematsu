@@ -11,7 +11,9 @@ export function Footer({ onNavigate }: FooterProps) {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <h3 className="mb-4">Takematsu</h3>
+            <div className="flex items-center mb-4 cursor-pointer" onClick={() => onNavigate('home')}>
+              <img src="/images/logo.png" alt="Takematsu Logo" className="h-10 w-auto brightness-0 invert" />
+            </div>
             <p className="text-sm text-gray-300 leading-relaxed">
               鉄骨造建築の設計から製作、施工まで一貫したサービスを提供する総合鉄骨メーカーです。
             </p>

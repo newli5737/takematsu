@@ -13,17 +13,17 @@ import { JobDetail } from './pages/JobDetail';
 import { Access } from './pages/Access';
 import { Contact } from './pages/Contact';
 
-type Page = 
-  | 'home' 
-  | 'company' 
-  | 'services' 
-  | 'projects' 
+type Page =
+  | 'home'
+  | 'company'
+  | 'services'
+  | 'projects'
   | 'project-detail'
-  | 'news' 
+  | 'news'
   | 'news-detail'
   | 'recruitment'
   | 'job-detail'
-  | 'access' 
+  | 'access'
   | 'contact';
 
 function App() {
@@ -75,7 +75,7 @@ function App() {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar currentPage={currentPage} onNavigate={handleNavigate} />
-      <main className="flex-grow">
+      <main className={`flex-grow ${currentPage === 'news-detail' ? 'pt-20' : ''}`}>
         {renderPage()}
       </main>
       <Footer onNavigate={handleNavigate} />

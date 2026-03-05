@@ -109,15 +109,16 @@ export function Home({ onNavigate }: HomeProps) {
   ];
 
   return (
-    <div>
+    <div id="home-page">
       {/* Hero Section */}
       <Hero
         title="確かな技術で未来を支える"
         subtitle="建築鉄骨の設計・製造・施工まで一貫対応"
-        imageUrl="https://images.unsplash.com/photo-1515100665905-d66c4dea74ae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdGVlbCUyMGNvbnN0cnVjdGlvbiUyMGJ1aWxkaW5nJTIwaW5kdXN0cmlhbHxlbnwxfHx8fDE3NzI2OTY2NjJ8MA&ixlib=rb-4.1.0&q=80&w=1080"
+        imageUrl="/images/bg_top.jpg"
       >
         <div className="mt-8 flex gap-4">
           <button
+            id="home-hero-services-btn"
             onClick={() => onNavigate('services')}
             className="bg-accent hover:bg-accent/90 text-white px-8 py-3 rounded-lg transition-colors"
           >
@@ -133,7 +134,7 @@ export function Home({ onNavigate }: HomeProps) {
       </Hero>
 
       {/* Company Introduction */}
-      <section className="py-20 bg-white">
+      <section id="home-company-intro" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-primary mb-4">会社紹介</h2>
